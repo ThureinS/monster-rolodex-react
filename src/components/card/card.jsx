@@ -1,0 +1,14 @@
+import React from "react";
+import "./card.css";
+
+const Card = ({ name, email, id }) => {
+  return (
+    <div className="card-container">
+      <img className="img-width" src={`https://robohash.org/${id}?set=set2`} />
+      <h3>{name}</h3>
+      <p>{email}</p>
+    </div>
+  );
+};
+
+export default Card;
